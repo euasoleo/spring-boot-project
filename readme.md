@@ -10,7 +10,7 @@ This assignment is created using:
 * Postman (for API testing)
 
 ## Features
-This is web application with one endpoint /users, that provides two RESTful APIs function. 
+This is a web application with one endpoint /users, that provides two RESTful APIs function. 
 
 |S/N|Resource|Method|Description|
 |---|---|---|---|
