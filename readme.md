@@ -14,8 +14,8 @@ This is a web application with one endpoint /users, that provides two RESTful AP
 
 |S/N|Resource|Method|Description|
 |---|---|---|---|
-|1|http://localhost:8080/users|POST| Upload a user data CSV file (inside body, form-data with key 'file') and the function will insert all the users information into a database. After uploading successfully, the filename, filetype and size will be return in JSON. | 
-|2|http://localhost:8080/users|GET| Getting list of users that have valid salary (0 <= salary <= 4000) in JSON.| 
+|1|http://localhost:8080/users|POST| Upload a user data CSV file (using form-data with key 'file'), and the function will insert all the user's information into a database. After successfully uploaded the file, the filename, filetype and size will be return in JSON. | 
+|2|http://localhost:8080/users|GET| Getting a list of users that have valid salary (0 <= salary <= 4000) in JSON.| 
 
 ## Database Schema
 **Table**: User
@@ -40,6 +40,6 @@ Pepper,-10.99
 
 1) Open Spring Tool Suite.
 2) Go to File > Import... > Maven > Existing Maven Projects.
-3) Right click the loaded project > Run As > Spring Boot App.
+3) Right-click the imported project > Run As > Spring Boot App.
 4) Use Postman and POST with user-data.csv in the form-data with 'file' as key.
 5) Use Postman and GET the list of valid users with valid salary.
